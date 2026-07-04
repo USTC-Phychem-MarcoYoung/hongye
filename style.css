@@ -1,0 +1,211 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  background: #fff7ec;
+  color: #2b1b12;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  padding: 46px 18px 34px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb12a, #f0442f);
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 14px auto 22px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 22px 16px 42px;
+}
+
+.section {
+  margin-top: 26px;
+}
+
+.section-title {
+  font-size: 25px;
+  margin: 0 0 16px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 15px;
+}
+
+.dish {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(120, 56, 0, 0.12);
+  border: 1px solid #ffe2b8;
+}
+
+.dish img {
+  width: 100%;
+  height: 138px;
+  object-fit: cover;
+  display: block;
+  background: #f4d0a0;
+}
+
+.dish-content {
+  padding: 12px;
+}
+
+.dish h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.dish p {
+  margin: 0;
+  font-size: 13px;
+  color: #7b5a3a;
+  line-height: 1.5;
+}
+
+.card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 8px 22px rgba(120, 56, 0, 0.12);
+  border: 1px solid #ffe2b8;
+}
+
+.shop-name {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 4px 0 8px;
+}
+
+.address {
+  color: #6b4b2d;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #e6382c;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(230, 56, 44, 0.22);
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #e6382c;
+  border: 1px solid #e6382c;
+  box-shadow: none;
+}
+
+.btn.light {
+  background: #fff;
+  color: #d83226;
+  box-shadow: none;
+}
+
+.tip {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #8a6b4d;
+}
+
+.qr-wrap {
+  text-align: center;
+}
+
+.qr {
+  width: min(260px, 82vw);
+  border-radius: 18px;
+  border: 8px solid #fff;
+  box-shadow: 0 8px 22px rgba(120, 56, 0, 0.16);
+  background: #fff;
+}
+
+.qr-text {
+  margin-top: 14px;
+  color: #6b4b2d;
+  line-height: 1.7;
+}
+
+.notice {
+  background: #fff1d9;
+  border: 1px dashed #f2a33a;
+  border-radius: 16px;
+  padding: 14px;
+  color: #704315;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  color: #8a6b4d;
+  font-size: 13px;
+  padding: 24px 16px 36px;
+}
+
+@media (min-width: 720px) {
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .dish img {
+    height: 165px;
+  }
+}
